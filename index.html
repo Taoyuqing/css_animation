@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 动画</title>
+    <style>
+        /* 动画示例 */
+        .div1 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #999999;
+            transition: 1s;
+            font-size: 12px;
+        }
+
+        .div1:hover {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 指定属性 */
+        .div2 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #999999;
+            transition: 1s height;
+            font-size: 12px;
+        }
+
+        .div2:hover {
+            height: 100px;
+        }
+
+        /* 指定多个属性 */
+        .div3 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #999999;
+            transition: 1s height, 1s width;
+            font-size: 12px;
+        }
+
+        .div3:hover {
+            height: 100px;
+            width: 100px;
+        }
+
+        /* 结束当前属性再进行下一个 */
+        .div4 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #999999;
+            transition: 1s height, 1s 1s width;
+            font-size: 12px;
+        }
+
+        .div4:hover {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        当鼠标停留 放大
+    </div>
+
+    <div class="div2">
+        指定属性
+    </div>
+    <div class="div3">
+        多个属性
+    </div>
+    <div class="div3">
+        多个属性
+    </div>
+    <div class="div4">
+        逐个执行
+    </div>
+</body>
+
+</html>
